@@ -2013,11 +2013,24 @@ function RoomDetailPage() {
                 <Leaderboard roomId={room?._id} token={token} socket={socket} />
               </ErrorBoundary>
             </div>
+
             {/* Doubts - flexible width */}
-            <div style={{ flex: isMobile ? '1 1 100%' : '1 1 calc(30% - 10px)', minWidth: isMobile ? 0 : '280px', maxWidth: '100%', boxSizing: 'border-box' }}>
+            <div
+              style={{
+                flex: isMobile ? '1 1 100%' : '1 1 calc(30% - 10px)',
+                minWidth: isMobile ? 0 : '280px',
+                maxWidth: '100%',
+                boxSizing: 'border-box'
+              }}
+            >
               <ErrorBoundary message="Doubts unavailable">
-                <DoubtsPanel roomId={room?._id} socket={socket} isTeacher />
+                <DoubtsPanel
+                  roomId={room?._id}
+                  socket={socket}
+                  isTeacher
+                />
               </ErrorBoundary>
+            </div>
             </div>
           </div>
         </div>

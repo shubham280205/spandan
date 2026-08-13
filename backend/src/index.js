@@ -22,6 +22,7 @@ import transcriptionRoutes from './routes/transcription.js'
 import transcriptRoutes from './routes/transcripts.js'
 import responseRoutes from './routes/responses.js'
 import researchRoutes from './routes/research.js'
+
 import adminRoutes from './routes/admin.js'
 import doubtRoutes from './routes/doubts.js'
 
