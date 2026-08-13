@@ -2031,7 +2031,6 @@ function RoomDetailPage() {
                 />
               </ErrorBoundary>
             </div>
-            </div>
           </div>
         </div>
       </div>
